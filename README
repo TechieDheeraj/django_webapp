@@ -1,0 +1,3 @@
+# Installing Django Project and App:
+	$ django-admin startproject webapp_project
+	$ python3 manage.py startapp webapp
