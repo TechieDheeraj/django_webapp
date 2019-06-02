@@ -25,7 +25,7 @@ SECRET_KEY = 'q_)_!h-==eyx5+#7gv0yp-ai^^6!1lv!bkma2t6se03-4m(4dn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["10.145.67.139"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'webapp'
 ]
 
 MIDDLEWARE = [
@@ -113,8 +114,16 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    )
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_FILES_DIR = (
+    os.path.join(BASE_DIR, 'static'),
+    )

@@ -1,3 +1,5 @@
 # Installing Django Project and App:
 	$ django-admin startproject webapp_project
 	$ python3 manage.py startapp webapp
+# Run Web Server:
+	$ python3 manage.py runserver 0.0.0.0:8000

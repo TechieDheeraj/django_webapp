@@ -1,0 +1,52 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'/>
+	<title> Traffic Nodes Info </title>
+	<!-- <link rel='stylesheet' href='/static/styles.css'/> -->
+	<link rel='stylesheet' href="{% static 'styles.css' %}"/>
+</head>
+<body>
+	<div class='page'>
+		<div class='header_info'> 
+			<h1> TRAFFIC NODES INFORMATION </h1>
+		</div>
+		<div class='row'>
+			<div class='column'>
+				<div class='box'> Host 1 
+					<div class='box_text'> IP ADDRESS: </div>
+				</div>
+				<div class='box'> Host 2 
+					<div class='box_text'> IP ADDRESS: </div>
+				</div>
+				<div class='box'> Host 3 
+					<div class='box_text'> IP ADDRESS: </div>
+				</div>
+			</div>
+			<div class='column'>
+				<div class='box for_center'> BIG IP 	
+					<div class='server_text'> IP ADDRESS: </div>
+				</div>
+			</div>
+			<div class='column'>
+				<div class='box'> Server 1 
+					<div class='server_text'> IP ADDRESS: </div>
+					<div class='server_text'> PORT: </div>
+					<div class='server_text'> No. Of Connections: </div>
+				</div>
+				<div class='box'> Server 2 
+					<div class='server_text'> IP ADDRESS: </div>
+					<div class='server_text'> PORT: </div>
+					<div class='server_text'> No. Of Connections: </div>
+				</div>
+				<div class='box'> Server 3 
+					<div class='server_text'> IP ADDRESS: </div>
+					<div class='server_text'> PORT: </div>
+					<div class='server_text'> No. Of Connections: </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+
